@@ -29,14 +29,14 @@ public class MainApp {
 
         System.out.println("сдесь должен быть распечатан юзер:  " + userService.getUserByModelAndSeries("BMW", "F10"));
 
-//        List<User> users = userService.listUsers();
-//        for (User u : users) {
-//            System.out.println("Id = " + u.getId());
-//            System.out.println("First Name = " + u.getFirstName());
-//            System.out.println("Last Name = " + u.getLastName());
-//            System.out.println("Email = " + u.getEmail());
-//            System.out.println("Car's " + u.getCar());
-//        }
+        List<User> users = userService.listUsers();
+        for (User u : users) {
+            System.out.println("Id = " + u.getId());
+            System.out.println("First Name = " + u.getFirstName());
+            System.out.println("Last Name = " + u.getLastName());
+            System.out.println("Email = " + u.getEmail());
+            System.out.println("Car's " + u.getCar());
+        }
 
         context.close();
     }
